@@ -1,0 +1,65 @@
+body {
+    background-image:url('background.jpg'); 
+    background-position: -100px -100px;
+    margin:0px;
+    padding:0px;
+}
+
+.clouds {
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:0px;
+    padding:0px;
+    
+    background-image:url('background-clouds.png');  
+    background-position: -100px -100px;
+    margin:0px;
+    padding:0px;
+}
+
+.content {  
+    position:fixed;
+    top:20px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow:scroll;
+    -webkit-overflow-scrolling:touch;
+    margin-bottom:0px;
+    padding:0px 10px;
+    transform: translate3d( 0px,0px,0px;)
+}
+
+.footer {
+    position:fixed;
+    height:22px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background: rgba(255,255,255,0.9);
+    color:888;
+    text-align:center;
+    padding:5px 0px 0px 0px;
+    border-top:5px solid #CCC;
+    font-size:12px;
+}
+
+button {
+    width:80px;
+    height:80px;
+    float:left;
+    margin:10px;
+    border-radius: 20px;
+    background: rgba(255,255,255,1);
+}
+
+
+/* using this media query to force center content on my android device (samsung galaxy s4 )*/
+@media screen and (device-aspect-ratio: 9/16) {
+    .content {  
+        padding:0px 30px;
+    }
+}
